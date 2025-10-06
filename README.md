@@ -3,7 +3,7 @@
 
 The repository contains the code implementation of the paper: Envisioning Global Urban Development with Satellite Imagery and Generative AI.
 
-<img src="show.jpg" width="100%">
+<img src="C1.pdf" width="100%">
 
 
 ## Table of Contents
