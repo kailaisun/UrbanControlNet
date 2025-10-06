@@ -21,6 +21,13 @@ The repository contains the code implementation of the paper: Envisioning Global
 
 ## Installation
 
+Download or clone the repository.
+
+```shell
+git clone https://github.com/kailaisun/UrbanControlNet.git
+cd UrbanControlNet
+```
+
 ### Dependencies
 
 - Ubuntu
@@ -30,22 +37,15 @@ The repository contains the code implementation of the paper: Envisioning Global
 
 ### Environment Installation
 
-We recommend using Miniconda (Conda) for installation. 
+We recommend using Conda for installation. 
 
 **Step 0**: Install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html).
 
-**Step 1**: Create a virtual environment named `ttp` and activate it.
+**Step 1**: Create a virtual environment named `mambacontrol` and activate it.
 
 ```shell
-conda create -n ttp python=3.7 -y
-conda activate idc
-```
-
-**Step 2**: Install [PyTorch2.1.x](https://pytorch.org/get-started/locally/).
-
-Linux:
-```shell
-pip install torch==1.9.1 torchvision==0.10.1 torchaudio==0.9.1 --index-url https://download.pytorch.org/whl/cu111
+conda env create -f environment.yaml
+conda activate mambacontrol
 ```
 
 **Step 4**: Install other dependencies.
@@ -57,12 +57,7 @@ pip install matplotlib scipy numpy opencv-python pillow typing-extensions=4.2.0
 ### Install IDC
 
 
-Download or clone the repository.
 
-```shell
-git clone git@github.com:kailaisun/Indoor-Depth-Completion.git
-cd Indoor-Depth-Completion
-```
 
 ## Dataset Preparation
 
