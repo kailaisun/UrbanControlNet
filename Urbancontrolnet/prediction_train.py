@@ -10,10 +10,9 @@ import re
 
 
 
-# 设置 2 号显卡
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
-# 检查是否使用了 GPU
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
@@ -44,7 +43,7 @@ class ImageRegressionDataset(Dataset):
 
         labels = re.findall(r'\b\d+\.\d+|\b\d+\b', prompt)
 
-        # 转换为浮点数并归一化（除以最大值）
+      
         labels = [float(num) / self.max_values[i] for i, num in enumerate(labels)]
 
 
@@ -62,7 +61,7 @@ transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 ])
-# 读取所有样本的 numbers，并计算每个位置的最大值和最小值
+
 def calculate_min_max_per_position(data_dir):
     dataset = ImageRegressionDataset(data_dir)
     all_numbers = []
@@ -71,10 +70,10 @@ def calculate_min_max_per_position(data_dir):
         numbers = dataset[idx]
         all_numbers.append(numbers)
 
-    # 转置列表以按位置分组
+ 
     all_numbers_transposed = list(zip(*all_numbers))
 
-    # 计算每个位置的最大值和最小值
+    
     min_max_per_position = [(min(position), max(position)) for position in all_numbers_transposed]
 
     return min_max_per_position
