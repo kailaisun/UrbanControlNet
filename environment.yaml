@@ -1,4 +1,4 @@
-name: control
+name: mambacontrol
 channels:
   - pytorch
   - defaults
