@@ -28,35 +28,16 @@ git clone https://github.com/kailaisun/UrbanControlNet.git
 cd UrbanControlNet
 ```
 
-### Dependencies
+We recommend using Conda ([Miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html)) for installation. 
 
-- Ubuntu
-- Python 3.7+, recommended 3.7.0
-- PyTorch 1.9.0 or higher, recommended 1.9.1+cu111
-- CUDA 12.4 or higher, recommended 12.4
+### Environment Installation 
 
-### Environment Installation
-
-We recommend using Conda for installation. 
-
-**Step 0**: Install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html).
-
-**Step 1**: Create a virtual environment named `mambacontrol` and activate it.
+Create a virtual environment named `mambacontrol` and activate it.
 
 ```shell
 conda env create -f environment.yaml
 conda activate mambacontrol
 ```
-
-**Step 4**: Install other dependencies.
-
-```shell
-pip install matplotlib scipy numpy opencv-python pillow typing-extensions=4.2.0
-```
-
-### Install IDC
-
-
 
 
 ## Dataset Preparation
