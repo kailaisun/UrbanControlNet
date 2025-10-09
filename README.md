@@ -1,6 +1,6 @@
 # UrbanControlNet
 
-
+## Introduction
 The repository contains the code implementation of the paper: Envisioning Global Urban Development with Satellite Imagery and Generative AI.
 
 <img src="git1.png" width="100%">
