@@ -86,7 +86,7 @@ python prediction_train.py
 
 ## Model evaluation
 
-see our another project: [Evaluation-Metrics](https://github.com/T5-AI/Evaluation-Metrics)
+For computing metric (e.g., FID, ID, SSIM, FSIM, PSNR, etc.), please see our another repo: [Evaluation-Metrics](https://github.com/T5-AI/Evaluation-Metrics)
 
 ## Acknowledgements
 
