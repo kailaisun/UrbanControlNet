@@ -13,7 +13,7 @@ The repository contains the code implementation of the paper: Envisioning Global
 - [Dataset Preparation](#dataset-preparation)
 - [Model Training](#model-training)
 - [Model Testing](#model-testing)
-- [Image Prediction](#image-prediction)
+- [Model evaluation](#model-evaluation)
 - [Acknowledgements](#acknowledgements)
 - [Citation](#citation)
 - [License](#license)
