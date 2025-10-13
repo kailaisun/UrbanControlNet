@@ -42,10 +42,39 @@ conda activate mambacontrol
 
 ## Dataset Preparation
 
+
 #### Dataset Download
 
-Image and label download address: . It includes:
+The dataset is built from publicly available global sources:
+Urban boundaries — GHS Urban Centre Database (2023), covering 500 metropolitan areas with 400 m × 400 m grids.
+Satellite imagery — Mapbox Static Tiles API (docs.mapbox.com).
+Population and building data — GHSL P2023A (GHS-BUILT-S/V, GHS-POP, 2020).
+Environmental constraints — OpenStreetMap (www.openstreetmap.org), including major roads, water bodies, and railways.
 
+
+#### Dataset Download
+
+Download land use, building, and basemap data:
+
+```shell
+python download_mapbox_tiles.py  
+python download_osm_landuse_building.py  
+```
+
+Create DEM, hint, and satellite images:
+
+```shell
+python create_dem_image.py  
+python create_hint_image.py  
+python create_satellite_image.py  
+```
+
+Compute grid density and land use–road metrics:
+
+```shell
+python compute_grid_density_gee.py  
+python create_landuse_road_metrics.py  
+```
 
 ## Model Training
 
