@@ -42,14 +42,11 @@ conda activate mambacontrol
 
 ## Dataset Preparation
 
-
-#### Dataset Download
-
 The dataset is built from publicly available global sources:
-Urban boundaries — GHS Urban Centre Database (2023), covering 500 metropolitan areas with 400 m × 400 m grids.
-Satellite imagery — Mapbox Static Tiles API (docs.mapbox.com).
-Population and building data — GHSL P2023A (GHS-BUILT-S/V, GHS-POP, 2020).
-Environmental constraints — OpenStreetMap (www.openstreetmap.org), including major roads, water bodies, and railways.
+- **Urban boundaries** — [GHS Urban Centre Database (2023)](https://human-settlement.emergency.copernicus.eu/ghs_ucdb_2024.php), covering 500 metropolitan areas with 400 m × 400 m grids.
+- **Satellite imagery** — [Mapbox Static Tiles API](https://docs.mapbox.com/api/maps/static-tiles/).
+- **Population and building data** — GHSL P2023A (2020): [GHS-BUILT-S](https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_BUILT_S), [GHS-BUILT-V](https://human-settlement.emergency.copernicus.eu/ghs_buV2023.php), [GHS-POP](https://human-settlement.emergency.copernicus.eu/ghs_pop2019.php).
+- **Environmental constraints** — [OpenStreetMap](https://www.openstreetmap.org), including major roads, water bodies, and railways.
 
 
 #### Dataset Download
