@@ -54,6 +54,7 @@ The dataset is built from publicly available global sources:
 Download land use, building, and basemap data:
 
 ```shell
+cd dataset
 python download_mapbox_tiles.py  
 python download_osm_landuse_building.py  
 ```
