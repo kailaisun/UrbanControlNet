@@ -93,9 +93,18 @@ python train_density.py
 ## Model Testing
 
 #### Checkpoints:
--We provide two checkpoints (one is fintuned on 100 cities with better performance; another is finetuned on 500 cities with larger coverage):[Download](https://huggingface.co/skl24/Urbancontrolnet/tree/main)
+-We provide two checkpoints (one is finetuned on 100 cities with better performance; another is finetuned on 500 cities with larger coverage):[Download](https://huggingface.co/skl24/Urbancontrolnet/tree/main)
 
 #### Urban Satelliate Image Generation:
+
+Download checkpoints, make a new folder (checkpoints_density), and change the lines at results_view_loop_density.py: 
+
+```shell
+ckpt_directory = f'./checkpoints_density'
+ckpt_epoch_list = ['100'] 
+output_file_dir = f'./output_image/city_'
+```
+
 
 ```shell
 python results_view_loop_density.py
