@@ -93,7 +93,7 @@ python train_density.py
 ## Model Testing
 
 #### Checkpoints:
--Finetuning:[Download](https://1drv.ms/u/s!AnkbiBgsbBltncF0u-3e5rkH2yOTkg?e=WQ1wle)
+-We provide two checkpoints (one is fintuned on 100 cities with better performance; another is finetuned on 500 cities with larger coverage):[Download](https://huggingface.co/skl24/Urbancontrolnet/tree/main)
 
 #### Urban Satelliate Image Generation:
 
