@@ -33,9 +33,9 @@ print(device)  # 输出：device(type='cuda', index=1)
 # desc = 'Description_landuse_med_hh_inc'
 test_seed = 42
 
-ckpt_directory = f'./ckpts_s_old_10_4metric/checkpoints_density'
-ckpt_epoch_list = ['55'] # '3', '10','30','50','70'
-output_file_dir = f'./output_image/ckpts_s_old_10_4metric/epoch_'
+ckpt_directory = f'./checkpoints_density'
+ckpt_epoch_list = ['100'] # '3', '10','30','50','70'
+output_file_dir = f'./output_image/city_'
 
 def find_epoch_files(directory, epoch_value):
     match_string = f'epoch={epoch_value}-'
